@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/resultgradiant"
+    android:orientation="vertical"
+    tools:context=".ResultActivity">
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/resultStatic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="Your Result!!\n You have scored"
+            android:textSize="22sp"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/resultLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="2 / 5"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginBottom="80dp"
+            android:textSize="25sp"/>
+
+
+        <TextView
+            android:visibility="gone"
+            android:gravity="center"
+            android:id="@+id/totalScoreLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="#ffffff"
+            android:text="Your Total score: 3"
+            android:layout_marginBottom="80dp"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:textColor="#ffffff"
+            android:layout_margin="8dp"
+            android:background="@drawable/buttoncurve"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="returnTop"
+            android:text="OK,Done"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
